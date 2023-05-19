@@ -41,6 +41,8 @@
     </div>
 
     <div id="output">
+
+    </div>
         <script>
             var form = document.getElementById('searchForm');
             var textarea = document.getElementById('box1');
@@ -49,20 +51,18 @@
 
             form.addEventListener('submit', function(event) {
                 event.preventDefault(); 
-    
-                var text = textarea;
-    
-                outputDiv.textContent = text.value;
+                var text = textarea.value;
+                outputDiv.textContent = text;
 
             });
 
             clearButton.addEventListener('click', function(){
                 textarea.value='';
-                outputDiv.textContent = '';
+
             })
         </script>
         
-    </div>
+
     
     
 </body>
